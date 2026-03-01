@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 const Footer = () => {
     return (
         <footer className="bg-dark-teal py-20 text-white/60">
@@ -9,11 +7,9 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
                     <div className="lg:col-span-1">
                         <div className="flex items-center gap-2 mb-8 bg-white/10 p-4 rounded-2xl w-fit backdrop-blur-sm shadow-xl border border-white/5 group hover:bg-white/20 transition-all duration-500">
-                            <Image
+                            <img
                                 src="/images/logo.png"
                                 alt="MaryLand Logo"
-                                width={150}
-                                height={60}
                                 className="h-24 md:h-36 w-auto object-contain brightness-0 invert"
                             />
                         </div>

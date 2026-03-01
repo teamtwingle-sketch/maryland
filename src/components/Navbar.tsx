@@ -3,8 +3,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import Image from "next/image";
+import { Menu, X, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
@@ -39,13 +38,10 @@ const Navbar = () => {
                     animate={{ opacity: 1, x: 0 }}
                     className="flex items-center gap-2 cursor-pointer"
                 >
-                    <Image
+                    <img
                         src="/images/logo.png"
                         alt="MaryLand Study Abroad"
-                        width={200}
-                        height={80}
                         className="h-32 md:h-48 w-auto object-contain -my-6"
-                        priority
                     />
                 </motion.div>
 

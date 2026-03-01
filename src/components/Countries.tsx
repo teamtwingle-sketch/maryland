@@ -3,7 +3,6 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 const Countries = () => {
     const countries = [
@@ -74,12 +73,10 @@ const Countries = () => {
                             className="group relative h-[450px] overflow-hidden rounded-[2.5rem] cursor-pointer shadow-xl"
                         >
                             <div className="absolute inset-0">
-                                <Image
+                                <img
                                     src={country.image}
                                     alt={country.name}
-                                    fill
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                    unoptimized
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-dark-teal/90 via-dark-teal/20 to-transparent" />
                             </div>

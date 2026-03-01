@@ -2,7 +2,7 @@
 
 
 import { motion } from "framer-motion";
-import { Globe, GraduationCap, Plane } from "lucide-react";
+import { ChevronDown, Globe, GraduationCap, Plane } from "lucide-react";
 
 const Hero = () => {
     return (

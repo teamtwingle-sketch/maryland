@@ -3,7 +3,6 @@
 
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
-import Image from "next/image";
 
 const SuccessStories = () => {
     const testimonials = [
@@ -48,7 +47,7 @@ const SuccessStories = () => {
                             viewport={{ once: true }}
                             className="text-4xl md:text-5xl font-bold text-dark-text"
                         >
-                            Our Students&apos; <span className="text-primary-teal">Success</span>
+                            Our Students' <span className="text-primary-teal">Success</span>
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -100,14 +99,12 @@ const SuccessStories = () => {
                                 ))}
                             </div>
                             <p className="text-dark-text/80 text-lg leading-relaxed mb-8 italic">
-                                &quot;{story.content}&quot;
+                                "{story.content}"
                             </p>
                             <div className="flex items-center gap-4">
-                                <Image
+                                <img
                                     src={story.avatar}
                                     alt={story.name}
-                                    width={48}
-                                    height={48}
                                     className="w-12 h-12 rounded-full border-2 border-primary-teal/20"
                                 />
                                 <div>

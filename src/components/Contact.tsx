@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from "lucide-react";
+import { Send, MapPin, Phone, Mail, Instagram, Facebook, Twitter } from "lucide-react";
 
 const branches = [
     {
