@@ -231,25 +231,16 @@ const Contact = () => {
             </div>
 
             {/* Floating Buttons */}
-            <div className="fixed bottom-10 right-10 z-[100] flex flex-col gap-4">
+            <div className="hidden md:flex fixed bottom-10 right-10 z-[100] flex-col gap-4">
                 <motion.a
                     href="https://wa.me/919400878333"
                     target="_blank"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl shadow-[#25D366]/40"
+                    className="w-14 h-14 md:w-16 md:h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl shadow-[#25D366]/40"
                 >
-                    <WhatsAppIcon className="w-8 h-8" />
+                    <WhatsAppIcon className="w-7 h-7 md:w-8 md:h-8" />
                 </motion.a>
-                <div className="md:hidden">
-                    <motion.button
-                        initial={{ y: 100 }}
-                        animate={{ y: 0 }}
-                        className="fixed bottom-0 left-0 right-0 bg-primary-teal text-white py-4 font-bold text-center shadow-2xl rounded-t-3xl"
-                    >
-                        Free Consultation
-                    </motion.button>
-                </div>
             </div>
         </section>
     );
