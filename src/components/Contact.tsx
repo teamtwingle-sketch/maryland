@@ -126,7 +126,7 @@ const Contact = () => {
                                             onChange={handleInputChange}
                                             required
                                             placeholder=" "
-                                            className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary-teal outline-none transition-all peer"
+                                            className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 text-base focus:ring-2 focus:ring-primary-teal outline-none transition-all peer"
                                         />
                                         <label className="absolute left-6 top-4 text-dark-text/40 pointer-events-none transition-all peer-focus:-top-2.5 peer-focus:text-xs peer-focus:left-4 peer-focus:bg-white peer-focus:px-2 peer-focus:text-primary-teal peer-[:not(:placeholder-shown)]:-top-2.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:left-4 peer-[:not(:placeholder-shown)]:bg-white peer-[:not(:placeholder-shown)]:px-2">Full Name</label>
                                     </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                                             onChange={handleInputChange}
                                             required
                                             placeholder=" "
-                                            className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary-teal outline-none transition-all peer"
+                                            className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 text-base focus:ring-2 focus:ring-primary-teal outline-none transition-all peer"
                                         />
                                         <label className="absolute left-6 top-4 text-dark-text/40 pointer-events-none transition-all peer-focus:-top-2.5 peer-focus:text-xs peer-focus:left-4 peer-focus:bg-white peer-focus:px-2 peer-focus:text-primary-teal peer-[:not(:placeholder-shown)]:-top-2.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:left-4 peer-[:not(:placeholder-shown)]:bg-white peer-[:not(:placeholder-shown)]:px-2">Email Address</label>
                                     </div>
@@ -148,7 +148,7 @@ const Contact = () => {
                                         name="destination"
                                         value={formData.destination}
                                         onChange={handleInputChange}
-                                        className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary-teal outline-none transition-all text-dark-text"
+                                        className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 text-base focus:ring-2 focus:ring-primary-teal outline-none transition-all text-dark-text"
                                     >
                                         <option value="">Preferred Destination</option>
                                         <option>United Kingdom</option>
@@ -165,7 +165,7 @@ const Contact = () => {
                                         onChange={handleInputChange}
                                         rows={4}
                                         placeholder=" "
-                                        className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 focus:ring-2 focus:ring-primary-teal outline-none transition-all peer"
+                                        className="w-full bg-background-light border-0 ring-1 ring-dark-text/10 rounded-2xl px-6 py-4 text-base focus:ring-2 focus:ring-primary-teal outline-none transition-all peer h-32 resize-none"
                                     ></textarea>
                                     <label className="absolute left-6 top-4 text-dark-text/40 pointer-events-none transition-all peer-focus:-top-2.5 peer-focus:text-xs peer-focus:left-4 peer-focus:bg-white peer-focus:px-2 peer-focus:text-primary-teal peer-[:not(:placeholder-shown)]:-top-2.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:left-4 peer-[:not(:placeholder-shown)]:bg-white peer-[:not(:placeholder-shown)]:px-2">Tell us about your plans</label>
                                 </div>

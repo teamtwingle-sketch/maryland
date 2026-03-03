@@ -6,7 +6,7 @@ import { ChevronDown, Globe, GraduationCap, Plane } from "lucide-react";
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center pt-48 md:pt-40 pb-32 md:pb-0 px-6 overflow-hidden bg-mesh">
+        <section className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-48 md:pt-40 pb-32 md:pb-0 px-6 overflow-hidden bg-mesh">
             {/* Background elements */}
             <motion.div
                 animate={{
@@ -35,7 +35,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-dark-text mb-8 leading-[1.1]"
+                    className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-dark-text mb-6 md:mb-8 leading-[1.1]"
                 >
                     Your Global Education <br className="hidden md:block" />
                     <span className="text-gradient">Journey Starts Here</span>
@@ -45,7 +45,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                    className="text-lg md:text-2xl text-dark-text/60 max-w-3xl mx-auto mb-12"
+                    className="text-base sm:text-lg md:text-2xl text-dark-text/60 max-w-3xl mx-auto mb-10 md:mb-12"
                 >
                     Trusted Study Abroad Consultants in Kerala. Empowering students to
                     reach world-class universities with professional guidance and end-to-end support.
@@ -58,12 +58,12 @@ const Hero = () => {
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
                     <a href="#contact" className="w-full sm:w-auto">
-                        <button className="bg-primary-teal text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl shadow-primary-teal/20 hover:bg-dark-teal hover:scale-105 active:scale-95 transition-all w-full">
+                        <button className="bg-primary-teal text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg shadow-xl shadow-primary-teal/20 hover:bg-dark-teal hover:scale-105 active:scale-95 transition-all w-full">
                             Book Free Consultation
                         </button>
                     </a>
                     <a href="#why-choose-us" className="w-full sm:w-auto">
-                        <button className="glass border border-dark-text/10 text-dark-text px-10 py-5 rounded-full font-bold text-lg hover:bg-white transition-all w-full">
+                        <button className="glass border border-dark-text/10 text-dark-text px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:bg-white transition-all w-full">
                             Our Services
                         </button>
                     </a>

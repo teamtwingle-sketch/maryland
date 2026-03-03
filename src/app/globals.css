@@ -21,6 +21,8 @@
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  -webkit-tap-highlight-color: transparent;
+  /* Removes blue tap box on mobile */
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +36,10 @@ body {
   overflow-x: hidden;
   overscroll-behavior-y: none;
   /* Disables scroll bounce on mobile */
+  touch-action: pan-x pan-y;
+  /* Enforces no-zoom at the CSS level */
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
   -webkit-touch-callout: none;
   /* Disables callout on mobile */
   -webkit-user-select: none;
@@ -53,6 +59,7 @@ body {
 .text-gradient {
   background: linear-gradient(135deg, #1E293B 0%, #4C8C84 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
