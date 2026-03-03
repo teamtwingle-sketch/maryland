@@ -6,7 +6,7 @@ import { ChevronDown, Globe, GraduationCap, Plane } from "lucide-react";
 
 const Hero = () => {
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 px-6 overflow-hidden bg-mesh">
+        <section className="relative min-h-screen flex flex-col items-center justify-center pt-48 md:pt-40 pb-32 md:pb-0 px-6 overflow-hidden bg-mesh">
             {/* Background elements */}
             <motion.div
                 animate={{
@@ -96,7 +96,7 @@ const Hero = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-10 flex flex-col items-center gap-3"
+                className="absolute bottom-10 hidden md:flex flex-col items-center gap-3"
             >
                 <span className="text-xs font-semibold text-dark-text/40 uppercase tracking-widest">Scroll to explore</span>
                 <div className="w-[1px] h-12 bg-gradient-to-b from-primary-teal/40 to-transparent">

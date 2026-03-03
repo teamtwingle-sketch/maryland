@@ -13,6 +13,7 @@ const Navbar = () => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
+        handleScroll(); // Call immediately on load to prevent glitch
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -49,7 +50,7 @@ const Navbar = () => {
                             <img
                                 src="/images/logo.png"
                                 alt="MaryLand Study Abroad"
-                                className="h-36 sm:h-40 md:h-48 w-auto object-contain -my-6"
+                                className="h-28 sm:h-32 md:h-48 w-auto object-contain -my-4 md:-my-6"
                             />
                         </a>
                     </motion.div>
