@@ -65,12 +65,12 @@ const Countries = () => {
                     {countries.map((country, index) => (
                         <motion.div
                             key={country.code}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
+                            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                            whileInView={{ opacity: 1, scale: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            whileHover={{ scale: 1.02 }}
-                            className="group relative h-[450px] overflow-hidden rounded-[2.5rem] cursor-pointer shadow-xl"
+                            transition={{ delay: index * 0.1, type: "spring", bounce: 0.4 }}
+                            whileHover={{ scale: 1.03, y: -5 }}
+                            className="group relative h-[450px] overflow-hidden rounded-[2.5rem] cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500 hover:shadow-primary-teal/20"
                         >
                             <div className="absolute inset-0">
                                 <img

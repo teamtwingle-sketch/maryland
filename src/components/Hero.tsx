@@ -10,23 +10,21 @@ const Hero = () => {
             {/* Background elements */}
             <motion.div
                 animate={{
-                    scale: [1, 1.2, 1],
-                    opacity: [0.3, 0.5, 0.3],
-                    x: [0, 50, 0],
-                    y: [0, -50, 0]
+                    scale: [1, 1.25, 1],
+                    opacity: [0.4, 0.6, 0.4],
+                    rotate: [0, 90, 0]
                 }}
-                transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-1/4 -left-20 w-96 h-96 bg-primary-teal/20 rounded-full blur-3xl -z-10"
+                transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-primary-teal/20 rounded-full blur-[100px] -z-10 mix-blend-multiply"
             />
             <motion.div
                 animate={{
                     scale: [1, 1.3, 1],
-                    opacity: [0.2, 0.4, 0.2],
-                    x: [0, -50, 0],
-                    y: [0, 50, 0]
+                    opacity: [0.3, 0.5, 0.3],
+                    rotate: [0, -90, 0]
                 }}
-                transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-gold-accent/10 rounded-full blur-3xl -z-10"
+                transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-gold-accent/20 rounded-full blur-[100px] -z-10 mix-blend-multiply"
             />
 
             <div className="container mx-auto text-center z-10">
@@ -52,18 +50,19 @@ const Hero = () => {
                 </motion.p>
 
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.6, type: "spring" }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-4"
+                    initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6, type: "spring", bounce: 0.4 }}
+                    className="flex flex-col sm:flex-row items-center justify-center gap-6"
                 >
-                    <a href="#contact" className="w-full sm:w-auto">
-                        <button className="bg-primary-teal text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg shadow-xl shadow-primary-teal/20 hover:bg-dark-teal hover:scale-105 active:scale-95 transition-all w-full">
+                    <a href="#contact" className="w-full sm:w-auto relative group">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-primary-teal to-gold-accent rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
+                        <button className="relative bg-primary-teal text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:bg-dark-teal group-hover:-translate-y-1 transition-all duration-300 w-full shadow-xl">
                             Book Free Consultation
                         </button>
                     </a>
-                    <a href="#why-choose-us" className="w-full sm:w-auto">
-                        <button className="glass border border-dark-text/10 text-dark-text px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:bg-white transition-all w-full">
+                    <a href="#why-choose-us" className="w-full sm:w-auto group">
+                        <button className="glass border border-dark-text/10 text-dark-text px-8 md:px-10 py-4 md:py-5 rounded-full font-bold text-base md:text-lg hover:bg-white/80 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] group-hover:-translate-y-1 transition-all duration-300 w-full backdrop-blur-xl">
                             Our Services
                         </button>
                     </a>
@@ -71,22 +70,22 @@ const Hero = () => {
 
                 {/* Feature badges */}
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, duration: 1 }}
-                    className="mt-20 flex flex-wrap justify-center gap-8 text-dark-text/40"
+                    className="mt-20 flex flex-wrap justify-center gap-6 sm:gap-10 text-dark-text/60"
                 >
-                    <div className="flex items-center gap-2">
-                        <GraduationCap size={20} />
-                        <span className="font-semibold uppercase tracking-wider text-xs">Global Ranking</span>
+                    <div className="flex items-center gap-3 px-6 py-3 rounded-2xl glass hover:-translate-y-1 transition-transform cursor-default">
+                        <GraduationCap size={24} className="text-primary-teal" />
+                        <span className="font-bold uppercase tracking-widest text-xs">Global Ranking</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Plane size={20} />
-                        <span className="font-semibold uppercase tracking-wider text-xs">Visa Success Rate</span>
+                    <div className="flex items-center gap-3 px-6 py-3 rounded-2xl glass hover:-translate-y-1 transition-transform cursor-default">
+                        <Plane size={24} className="text-gold-accent" />
+                        <span className="font-bold uppercase tracking-widest text-xs">Visa Success Rate</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Globe size={20} />
-                        <span className="font-semibold uppercase tracking-wider text-xs">500+ Partners</span>
+                    <div className="flex items-center gap-3 px-6 py-3 rounded-2xl glass hover:-translate-y-1 transition-transform cursor-default">
+                        <Globe size={24} className="text-primary-teal" />
+                        <span className="font-bold uppercase tracking-widest text-xs">500+ Partners</span>
                     </div>
                 </motion.div>
             </div>
