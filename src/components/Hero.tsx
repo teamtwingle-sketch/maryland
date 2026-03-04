@@ -9,6 +9,7 @@ const Hero = () => {
         <section className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-48 md:pt-40 pb-32 md:pb-0 px-6 overflow-hidden bg-mesh">
             {/* Background elements */}
             <motion.div
+                initial={{ scale: 1, opacity: 0.4, rotate: 0 }}
                 animate={{
                     scale: [1, 1.25, 1],
                     opacity: [0.4, 0.6, 0.4],
@@ -18,6 +19,7 @@ const Hero = () => {
                 className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-primary-teal/20 rounded-full blur-[100px] -z-10 mix-blend-multiply"
             />
             <motion.div
+                initial={{ scale: 1, opacity: 0.3, rotate: 0 }}
                 animate={{
                     scale: [1, 1.3, 1],
                     opacity: [0.3, 0.5, 0.3],
@@ -100,6 +102,7 @@ const Hero = () => {
                 <span className="text-xs font-semibold text-dark-text/40 uppercase tracking-widest">Scroll to explore</span>
                 <div className="w-[1px] h-12 bg-gradient-to-b from-primary-teal/40 to-transparent">
                     <motion.div
+                        initial={{ y: 0 }}
                         animate={{
                             y: [0, 48, 0],
                         }}

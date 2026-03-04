@@ -7,7 +7,7 @@ const CTA = () => {
     return (
         <section className="py-32 bg-gold-accent relative overflow-hidden shadow-inner">
             {/* Abstract circles */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full -mr-32 -mt-32 blur-[80px] animate-pulse" />
+            <div className="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full -mr-32 -mt-32 blur-[80px]" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/10 rounded-full -ml-48 -mb-48 blur-[100px]" />
 
             <div className="container mx-auto px-6 relative z-10 text-center">
