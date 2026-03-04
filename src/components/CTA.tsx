@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const CTA = () => {
     return (
-        <section className="py-32 bg-gradient-to-br from-gold-accent to-amber-600 relative overflow-hidden shadow-inner">
+        <section className="py-32 bg-gold-accent relative overflow-hidden shadow-inner">
             {/* Abstract circles */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full -mr-32 -mt-32 blur-[80px] animate-pulse" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/10 rounded-full -ml-48 -mb-48 blur-[100px]" />
@@ -30,7 +30,7 @@ const CTA = () => {
                         <motion.button
                             whileHover={{ y: -3, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
                             whileTap={{ scale: 0.97 }}
-                            className="relative bg-white text-gold-accent hover:text-amber-600 px-12 py-5 rounded-full font-bold text-xl shadow-2xl transition-colors duration-300"
+                            className="relative bg-white text-dark-teal hover:text-primary-teal px-12 py-5 rounded-full font-bold text-xl shadow-2xl transition-colors duration-300"
                         >
                             Book Free Consultation
                         </motion.button>
